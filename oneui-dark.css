@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "OneUI";
+    src: url("OneUI_Sans.ttf") format("truetype"),
+}
+
+body
+{
+justify-content:space-between;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap-reverse;
+align-content:end;
+position:relative;
+font-family:OneUI;
+color:#ffffff;
+background-color:#17171A;
+}
+
+.floatingToolbarHorizontal
+{
+width:fit-content;
+height:fit-content;
+background-color:rgba(0, 0, 0, 0.6);
+filter:drop-shadow(0px 9px 18px rgba(0,0,0,0.25));
+border-radius:60px;
+padding:9px;
+display: flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:9px;
+margin:20px;
+text-align:center;
+}
+
+.floatingToolbarVertical
+{
+width:fit-content;
+height:fit-content;
+background-color:rgba(0, 0, 0, 1);
+filter:drop-shadow(0px 9px 18px rgba(0,0,0,0.25));
+border-radius:60px;
+padding:9px;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:9px;
+margin:20px;
+text-align:center;
+}
+
+.toolbarButtom
+{
+  height:42px;
+  width:42px;
+  border-radius: 21px;
+  border: 0px;
+  background-color:#1E1E1E;
+  justify-content:center;
+  align-content:center;
+  text-align:center;
+  font-family:OneUI;
+  color:#ffffff;
+  font-weight: normal;
+}
+
+.toolbarButtom:hover
+{
+  background-color:#393939;
+  transition-duration: 0.1s;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.toolbarButtom:active {
+  background-color:#1E1E1E;
+  transition-duration: 0s;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #393939 100%, #1e1e1e);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 1s, opacity 1.2s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .2;
+  transition: 0s;
+}
