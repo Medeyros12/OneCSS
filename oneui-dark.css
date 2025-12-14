@@ -3,17 +3,10 @@
     src: url("OneUI_Sans.ttf") format("truetype"),
 }
 
-body
-{
-justify-content:space-between;
-display: flex;
-flex-direction:row;
-flex-wrap: wrap-reverse;
-align-content:end;
-position:relative;
-font-family:OneUI;
-color:#ffffff;
-background-color:#17171A;
+.ouiText {
+    font-family:OneUI;
+    color:#ffffff;
+    font-weight: normal;
 }
 
 .floatingToolbarHorizontal
