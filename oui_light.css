@@ -44,4 +44,6 @@
   border-radius: 25px;
   border: 0px;
   background: var(--oui-light_nav_btn_focus);
+  align-content: center;
+  justify-content: center;
 }
