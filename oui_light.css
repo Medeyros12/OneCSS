@@ -1,4 +1,12 @@
+@font-face {
+  font-family: "OneUI-Sans";
+  src:
+    local("OneUI-Sans-regular"),
+    url("OneUISansAPPVF400Regular-Regular.otf") format("opentype"),
+}
+
 :root {
+  --oui-light_secondary: #848487;
   --oui-legacy_shadow: 0px -2px 6px rgba(0, 0, 0, 0.05), 0px 0px 3px rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.1);
   --oui-light_bg: rgb(241 241 243);
   --oui-light_container_bg: rgb(252 252 255);
@@ -36,6 +44,9 @@
   border-radius: 25px;
   border: 0px;
   background: var(--oui-light_nav_btn);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .oui-nav_btn:active{
@@ -46,4 +57,35 @@
   background: var(--oui-light_nav_btn_focus);
   align-content: center;
   justify-content: center;
+  text-align: center;
+}
+
+.oui-float_control{
+  background: var(--oui-light_floating_bg);
+  box-shadow: var(--oui-legacy_shadow);
+  border-radius: 29px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.oui-text{
+  font: OneUI-Sans-regular;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.oui-textbox{
+  height: 48px;
+  width: stretch;
+  border-radius: 24px;
+  border: 0px;
+  background-color: var(--oui-light_container_bg);
+  color: var(--oui-light_secondary);
+  font: OneUI-Sans-regular;
+  align-content: center;
+  justify-content: space-between;
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 12px;
 }
