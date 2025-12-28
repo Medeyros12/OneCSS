@@ -38,6 +38,18 @@
   justify-content: space-evenly;
 }
 
+.oui-float_nav.vertical-nav.reverse{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: space-evenly;
+}
+
+.oui-float_nav.horizontal-nav.reverse{
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-evenly;
+}
+
 .oui-nav_btn{
   width: 50px;
   height: 50px;
@@ -61,6 +73,18 @@
 }
 
 .oui-float_control{
+  display: flex;
+  flex-flow: column nowrap;
+  background: var(--oui-light_floating_bg);
+  box-shadow: var(--oui-legacy_shadow);
+  border-radius: 29px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.oui-float_control{
+  display: flex;
+  flex-flow: column-reverse nowrap;
   background: var(--oui-light_floating_bg);
   box-shadow: var(--oui-legacy_shadow);
   border-radius: 29px;
@@ -88,4 +112,22 @@
   text-align: left;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.oui-position_bottom{
+  position: fixed;
+  bottom: 0px;
+}
+
+.oui-position_top{
+  position: fixed;
+  top: 0px;
+}
+
+.oui-position_left{
+  float: left;
+}
+
+.oui-position_right{
+  float: right;
 }
